@@ -46,6 +46,9 @@
 }
 .main-info__all-books
 {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -79,4 +82,31 @@
     padding: 15px;
     background-color: transparent;
     border: 2px solid white;
+}
+.main-kritery
+{
+    display: flex;
+    justify-content: space-between;
+}
+.main-kritery__block
+{
+    margin-top: 32px;
+    border-radius: 5px;
+    background-color: white;
+    width: 263px;
+    height: 150px;
+}
+.main-news
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+    background-color: white;
+}
+.main-news__block
+{
+    border: 1px solid rgb(243, 243, 243);
+    width: 370px;
+    height: 440px;
+    background-color: white;
 }

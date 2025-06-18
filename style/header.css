@@ -1,8 +1,5 @@
 header
 {
-    position: sticky;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: white;
 }
@@ -33,10 +30,16 @@ header
 .header-main__search,
 .header-main__search-wrapper{ display: flex; }
 .header-main__search{ gap: 45px; }
-.header-main__search-input
-{
-
+.header-main__search-input {
     padding: 15px 200px 15px 40px;
+    border: 1px solid black; /* Важно: border-style и border-width обязательны! */
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.header-main__search-input:focus {
+    border-color: #FF7A00; /* Теперь сработает */
+    box-shadow: 0 0 5px rgba(255, 122, 0, 0.3);
 }
 .header-main__content
 {
@@ -60,7 +63,6 @@ header
     align-items: center;
     gap: 20px;
 }
-
 
 .header-bottom__nav
 {
