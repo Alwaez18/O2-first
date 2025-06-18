@@ -25,3 +25,7 @@ a
     height: 1px;
     opacity: 40%;
 }
+body
+{
+    background-color: rgb(240, 233, 233);
+}

@@ -1,3 +1,11 @@
+header
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
 .header-up
 {
     height: 70px;
@@ -21,11 +29,13 @@
 /*-------HEADER_UP-FINISH-------*/
 
 /*-------HEADER_MAIN-START-------*/
+
 .header-main__search,
 .header-main__search-wrapper{ display: flex; }
 .header-main__search{ gap: 45px; }
 .header-main__search-input
 {
+
     padding: 15px 200px 15px 40px;
 }
 .header-main__content
@@ -62,6 +72,7 @@
 .header-bottom__nav-item
 {
     display: flex;
+    padding: 20px;
     align-items: center;
     gap: 5px;
 }
