@@ -8,14 +8,14 @@
 a
 {
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     cursor: pointer;
 }
 .container
 {
     width: 100%;
-    padding: 0px 35px;
+    padding: 0px 55px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 .line

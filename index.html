@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/hero-section.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
     <header class="header">
@@ -178,20 +179,36 @@
             <div class="container">
                 <div class="main-info">
                     <article class="main-info__card">
-
+                        <img src="book1.jpg" alt="Книга 'Искусство программирования'" class="card__image">
+                        <h3 class="card__title">Искусство программирования</h3>
+                        <p class="card__author">Дональд Кнут</p>
+                        <p class="card__price">2 499 ₽</p>
+                        <button class="card__button">В корзину</button>
                     </article>
                     <article class="main-info__card">
-
+                        <img src="book2.jpg" alt="Книга 'Чистый код'" class="card__image">
+                        <h3 class="card__title">Чистый код</h3>
+                        <p class="card__author">Роберт Мартин</p>
+                        <p class="card__price">1 899 ₽</p>
+                        <button class="card__button">В корзину</button>
                     </article>
                     <article class="main-info__card">
-
+                        <img src="book3.jpg" alt="Книга 'Совершенный код'" class="card__image">
+                        <h3 class="card__title">Совершенный код</h3>
+                        <p class="card__author">Стив Макконнелл</p>
+                        <p class="card__price">2 199 ₽</p>
+                        <button class="card__button">В корзину</button>
                     </article>
                     <article class="main-info__card">
-
+                        <img src="book4.jpg" alt="Книга 'Грокаем алгоритмы'" class="card__image">
+                        <h3 class="card__title">Грокаем алгоритмы</h3>
+                        <p class="card__author">Адитья Бхаргава</p>
+                        <p class="card__price">1 599 ₽</p>
+                        <button class="card__button">В корзину</button>
                     </article>
                 </div>
                 <div class="main-info__all-books">
-                    <a href="" class="main-info__link">Показать все книги раздела</a>
+                    <a href="/books" class="main-info__link">Показать все книги раздела</a>
                 </div>
                 <div class="main-search">
                     <h3 class="main-search__title">Скидка 200 ₽ при подписке на рассылку Издательства</h3>
@@ -200,72 +217,191 @@
                 </div>
             </div>
         </section>
+
         <section class="main-header">
             <div class="container">
                 <div class="main-content">
                     <div class="main-content__header">
-                        <h2 class="main-content__title">Готовяться к выходу</h2>
+                        <h2 class="main-content__title">Готовятся к выходу</h2>
                         <nav class="main-content-nav">
-                            <button class="main-content-nav__button">> </button>
+                            <button class="main-content-nav__button">></button>
                             <button class="main-content-nav__button main-content-nav__button--rotate">></button>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="main">
             <div class="container">
                 <div class="main-info">
                     <article class="main-info__card">
-
+                        <img src="preorder1.jpg" alt="Предзаказ 'React в действии'" class="card__image">
+                        <h3 class="card__title">React в действии</h3>
+                        <p class="card__author">Марк Тиленс</p>
+                        <p class="card__status">Ожидается 15 июня</p>
+                        <button class="card__button">Предзаказ</button>
                     </article>
                     <article class="main-info__card">
-
+                        <img src="preorder2.jpg" alt="Предзаказ 'TypeScript для профессионалов'" class="card__image">
+                        <h3 class="card__title">TypeScript для профессионалов</h3>
+                        <p class="card__author">Борис Черный</p>
+                        <p class="card__status">Ожидается 1 июля</p>
+                        <button class="card__button">Предзаказ</button>
                     </article>
                     <article class="main-info__card">
-
+                        <img src="preorder3.jpg" alt="Предзаказ 'Архитектура сложных фронтендов'" class="card__image">
+                        <h3 class="card__title">Архитектура сложных фронтендов</h3>
+                        <p class="card__author">Михаил Барулин</p>
+                        <p class="card__status">Ожидается 10 августа</p>
+                        <button class="card__button">Предзаказ</button>
                     </article>
                     <article class="main-info__card">
-
+                        <img src="preorder4.jpg" alt="Предзаказ 'Оптимизация производительности веб-приложений'" class="card__image">
+                        <h3 class="card__title">Оптимизация производительности</h3>
+                        <p class="card__author">Анна Белова</p>
+                        <p class="card__status">Ожидается 25 августа</p>
+                        <button class="card__button">Предзаказ</button>
                     </article>
                 </div>
                 <div class="main-info__all-books">
-                    <a href="" class="main-info__link">Показать все книги раздела</a>
+                    <a href="/preorders" class="main-info__link">Показать все книги раздела</a>
                 </div>
+
                 <div class="main-kritery">
                     <article class="main-kritery__block">
-
+                        <div class="kritery-icon">🏆</div>
+                        <h3>Бестселлеры</h3>
+                        <p>Самые популярные книги месяца</p>
                     </article>
                     <article class="main-kritery__block">
-
+                        <div class="kritery-icon">🆕</div>
+                        <h3>Новинки</h3>
+                        <p>Свежие поступления</p>
                     </article>
                     <article class="main-kritery__block">
-
+                        <div class="kritery-icon">💯</div>
+                        <h3>Акции</h3>
+                        <p>Специальные предложения</p>
                     </article>
                     <article class="main-kritery__block">
-
+                        <div class="kritery-icon">🎁</div>
+                        <h3>Подарочные издания</h3>
+                        <p>Книги в коллекционном оформлении</p>
                     </article>
                 </div>
+
                 <div class="main-content__header">
                     <h2 class="main-content__title">Новости</h2>
                     <nav class="main-content-nav">
-                        <button class="main-content-nav__button">> </button>
+                        <button class="main-content-nav__button">></button>
                         <button class="main-content-nav__button main-content-nav__button--rotate">></button>
                     </nav>
                 </div>
+
                 <div class="main-news">
                     <article class="main-news__block">
-
+                        <time datetime="2023-05-15" class="news__date">15 мая 2023</time>
+                        <h3 class="news__title">Новая серия книг по веб-разработке</h3>
+                        <p class="news__text">Издательство анонсировало выпуск серии книг по современным фронтенд-технологиям...</p>
+                        <a href="/news/1" class="news__link">Читать далее</a>
                     </article>
                     <article class="main-news__block">
-
+                        <time datetime="2023-05-10" class="news__date">10 мая 2023</time>
+                        <h3 class="news__title">Встреча с автором бестселлера</h3>
+                        <p class="news__text">25 мая состоится онлайн-встреча с Робертом Мартином, автором книги "Чистый код"...</p>
+                        <a href="/news/2" class="news__link">Читать далее</a>
                     </article>
                     <article class="main-news__block">
-
+                        <time datetime="2023-05-05" class="news__date">5 мая 2023</time>
+                        <h3 class="news__title">Конкурс для разработчиков</h3>
+                        <p class="news__text">Участвуйте в конкурсе и выиграйте подборку книг по программированию...</p>
+                        <a href="/news/3" class="news__link">Читать далее</a>
                     </article>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+
+          <!-- Верхняя часть футера -->
+          <div class="footer__top">
+            <div class="container">
+                <div class="footer__subscribe">
+                    <img src="img/logo (2).svg" alt="">
+                    <form class="footer__form">
+                      <input type="email" class="footer__input" placeholder="Введите свой Email и получите скидку">
+                      <button type="submit" class="footer__button"><img src="img/Send r_15.svg" alt=""></button>
+                    </form>
+                    <div class="footer__networks">
+                      <img src="img/Twitter Copy 3.svg" alt="">
+                      <img src="img/Twitter Copy 3.svg" alt="">
+                      <img src="img/Twitter Copy 3.svg" alt="">
+                    </div>
+                  </div>
+            </div>
+
+          </div>
+
+          <!-- Основное меню футера -->
+          <div class="footer__main">
+            <div class="footer__column">
+              <h4 class="footer__column-title">Покупателям</h4>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Наша почта</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Оплата и доставка</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Вопросы и ответы</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column-title">Издательство</h4>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Авторам</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Вакансии</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column-title">Книги</h4>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Все категории</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Бестселлеры</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Новинки</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Скидки и акции</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column-title">Прайс-лист</h4>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Скачать прайс-лист</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">PDF, 12 Мb</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <h4 class="footer__column-title">Телефон и Email</h4>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="mailto:market@estatut.ru" class="footer__link">market@estatut.ru</a></li>
+                <li class="footer__item"><a href="tel:89686606550" class="footer__link">8 (968) 660-65-50</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Нижняя часть футера -->
+          <div class="footer__bottom">
+            <div class="footer__copyright">© 2020 Издательство «Статут»</div>
+            <div class="footer__address">ул. Лобачевского, 92, корп. 2 119454, г. Москва</div>
+            <div class="footer__legal">
+              <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+              <a href="#" class="footer__legal-link">Договор оферты</a>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>

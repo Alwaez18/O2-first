@@ -1,0 +1,180 @@
+/* Базовые стили футера */
+.footer {
+    background-color: white;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 0 20px;
+    line-height: 1.5;
+  }
+
+  /* Контейнер для центрирования контента */
+  .footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Верхняя часть с формой подписки */
+  .footer__top {
+    margin-bottom: 40px;
+  }
+
+  .footer__subscribe {
+
+    display: flex;
+    justify-content: space-between;
+  }
+.footer__networks
+{
+    display: flex;
+    gap: 15px;
+
+}
+  .footer__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .footer__form {
+    background-color: transparent;
+    display: flex;
+    gap: 0;
+  }
+
+  .footer__input {
+    flex-grow: 1;
+    padding: 10px 155px 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .footer__button {
+    padding: 10px 20px;
+    background-color: #FF7A00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .footer__button:hover {
+    background-color: #1a252f;
+  }
+
+  /* Основное меню (колонки) */
+  .footer__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+  }
+
+  .footer__column {
+    width: 18%;
+    min-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .footer__column-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+
+  .footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__item {
+    margin-bottom: 8px;
+  }
+
+  .footer__link {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+  }
+
+  .footer__link:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  /* Нижняя часть (копирайт и пр.) */
+  .footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #777;
+  }
+
+  .footer__copyright {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer__address {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer__legal {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer__legal-link {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .footer__legal-link:hover {
+    text-decoration: underline;
+  }
+footer
+{
+    background-color: white;
+}
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .footer__column {
+      width: 48%;
+    }
+
+    .footer__form {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer__column {
+      width: 100%;
+    }
+
+    .footer__bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer__copyright,
+    .footer__address {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+    .footer__legal {
+      margin-top: 10px;
+      justify-content: center;
+    }
+  }

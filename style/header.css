@@ -5,7 +5,7 @@ header
 }
 .header-up
 {
-    height: 70px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -22,6 +22,14 @@ header
     display: flex;
     gap: 5px;
     align-items: center;
+    font-size: 14px;
+    transition: 0.3s all ease;
+}
+.header-up__right-link:hover,
+.header-up__left-link:hover
+{
+    scale: 1.1;
+    color: gray;
 }
 /*-------HEADER_UP-FINISH-------*/
 
@@ -43,9 +51,11 @@ header
 }
 .header-main__content
 {
-    margin-top: 20px;
+    height: 80px;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .header-main__search-button
 {
@@ -63,19 +73,23 @@ header
     align-items: center;
     gap: 20px;
 }
+.header-main__nav-item
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 .header-bottom__nav
 {
-    margin-top: 20px;
+    height: 40px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 .header-bottom__nav-item
 {
     display: flex;
-    padding: 20px;
-    align-items: center;
     gap: 5px;
 }
 .header-bottom__nav-link{ transition: 0.3s all ease; }
