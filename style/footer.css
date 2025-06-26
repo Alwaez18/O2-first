@@ -50,8 +50,10 @@
 
  .footer__input
  {
+  min-width: 300px;
+   width: 100%;
    flex-grow: 1;
-   padding: 10px 155px 10px 15px;
+   padding: 10px 15px 10px 15px;
    border: 1px solid #ddd;
    border-radius: 4px;
    font-size: 14px;

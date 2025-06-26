@@ -47,6 +47,7 @@
 
 .hero-section__block--purple
 {
+    margin-top: 40px;
     display: flex;
     font-size: 20px;
     align-items: center;
@@ -54,21 +55,24 @@
     color: white;
     background-color: purple;
     padding: 10px;
+    border-radius: 10px;
 }
 .hero-section__block--pink
 {
+    margin-top: 40px;
      background-color: pink;
     display: flex;
     font-size: 20px;
     align-items: center;
+    border-radius: 10px;
 }
 
 /* Карточка товара (занимает обе строки) */
 .hero-section__product-card
 {
+    padding: 10px;
     grid-column: 2; /* Вторая колонка */
     grid-row: 1 / span 2; /* Растягиваем на 2 строки */
-    padding: 20px;
     background-color: white;
     border-radius: 8px;
 }
@@ -129,7 +133,7 @@
 .hero-section__product-card__button
 {
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     padding: 10px;
@@ -145,4 +149,40 @@
 {
     display: flex;
     gap: 10px;
+}
+@media(max-width:375px)
+{
+    .hero-section__grid
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .hero-section__blocks
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .hero-section__product-card
+    {
+        order: 2;
+    }
+    .hero-section__action
+    {
+        height: 155px;
+        order: 0;
+    }
+    .hero-section__action-number
+    {
+        font-size: 48px;
+    }
+    .hero-section__action-text
+    {
+        font-size: 16px;
+    }
+    .hero-section__blocks
+    {
+        order: 3;
+    }
 }

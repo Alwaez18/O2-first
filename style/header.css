@@ -39,12 +39,14 @@ header
 .header-main__search-wrapper{ display: flex; }
 .header-main__search{ gap: 45px; }
 .header-main__search-input {
-    padding: 15px 200px 15px 40px;
+    padding: 15px 40px 15px 40px;
     border: 1px solid black; /* Важно: border-style и border-width обязательны! */
     outline: none;
     transition: border-color 0.3s;
+    min-width: 400px;
+    width: 100%;
 }
-
+.header-main__search-input::placeholder { content: "Автор, название, ISBN"; }
 .header-main__search-input:focus {
     border-color: #FF7A00; /* Теперь сработает */
     box-shadow: 0 0 5px rgba(255, 122, 0, 0.3);
@@ -52,7 +54,6 @@ header
 .header-main__content
 {
     height: 80px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,3 +102,41 @@ header
     transition: 0.3s all ease;
 }
 .header-bottom__nav-link--orange:hover{color: black;}
+.header-main__mobile{display: none;}
+@media(max-width:375px)
+{
+    .header-up{ display: none; }
+    .header-main__nav{ display: none; }
+    .header-main__search-input::placeholder{ content: "Что будем искать?";}
+    .header-main__search-input
+    {
+        min-width: 100px;
+        padding: 10px 20px;
+    }
+    .header-main__search-button{ display: none; }
+    .header-main__mobile
+    {
+        display: inline;
+        scale: 1.1;
+    }
+    .container
+    {
+        padding: 0 10px;
+    }
+    .header-main__search
+    {
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+    }
+    .header-main__search-wrapper
+    {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .header-bottom
+    {
+        display: none;
+    }
+}
