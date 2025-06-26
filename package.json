@@ -1,0 +1,17 @@
+{
+  "name": "o2maket2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vite": "^6.3.5",
+    "vue": "^3.5.17"
+  }
+}

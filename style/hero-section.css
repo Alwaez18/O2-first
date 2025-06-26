@@ -126,3 +126,23 @@
     border: 1px;
     box-shadow: black;
 }
+.hero-section__product-card__button
+{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.hero-section__product-card__button:hover
+{
+    box-shadow: 5px 5px 10px rgba(248, 112, 0, 0.9);
+    scale: 1.1;
+}
+.hero-section__product-card__buttons
+{
+    display: flex;
+    gap: 10px;
+}
