@@ -157,6 +157,10 @@
     color: #555;
     text-decoration: none;
   }
+  .footer__column-empty
+  {
+    display: none;
+  }
 
   .footer__legal-link:hover {text-decoration: underline;}
 footer{ background-color: white; }
@@ -196,5 +200,19 @@ footer{ background-color: white; }
     {
       margin-top: 10px;
       justify-content: center;
+    }
+    .footer__list
+    {
+      display: none;
+    }
+    .footer__column
+    {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer__column-empty
+    {
+      display: flex;
     }
   }

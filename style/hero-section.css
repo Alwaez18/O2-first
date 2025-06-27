@@ -12,12 +12,32 @@
 .hero-section__action
 {
     height: 350px;
-    background-color: #CCFF90;
+    background-image: url("/Users/o2/projectYarik/O2maket2/img/Group 1049.png");
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     grid-row: 1; /* Первая строка сетки */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.hero-section__button
+{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.hero-section__button:hover
+{
+    border-radius: -5px;
+    background-color: gray;
 }
 
 .hero-section__action-number
@@ -60,11 +80,12 @@
 .hero-section__block--pink
 {
     margin-top: 40px;
-     background-color: pink;
+    background-color: pink;
     display: flex;
     font-size: 20px;
     align-items: center;
     border-radius: 10px;
+    padding: 25px;
 }
 
 /* Карточка товара (занимает обе строки) */
@@ -150,39 +171,64 @@
     display: flex;
     gap: 10px;
 }
+.hero-section__text--registr{ display: block; }
+.hero-section__text::before
+{
+    content: "Бесплатно";
+    padding: 5px;
+    background-image:url('/Users/o2/projectYarik/O2maket2/img/Vector 161.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.hero-section__text--registr::after
+{
+    content: "15 %";
+    padding: 5px;
+    background-image:url('/Users/o2/projectYarik/O2maket2/img/Vector 162.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 @media(max-width:375px)
 {
     .hero-section__grid
     {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 0px;
+        margin: 0;
     }
     .hero-section__blocks
     {
         display: flex;
         flex-direction: column;
         gap: 0;
+        margin: 0;
     }
-    .hero-section__product-card
+    .hero-section__block
     {
-        order: 2;
+        margin: 10px auto;
     }
+    .hero-section__product-card{order: 2;}
     .hero-section__action
     {
         height: 155px;
         order: 0;
     }
-    .hero-section__action-number
-    {
-        font-size: 48px;
-    }
-    .hero-section__action-text
-    {
-        font-size: 16px;
-    }
+    .hero-section__action-number{ font-size: 48px; }
+    .hero-section__action-text{font-size: 16px;}
     .hero-section__blocks
     {
         order: 3;
+        height: 355px;
+    }
+    .hero-section__text--registr
+    {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
     }
 }

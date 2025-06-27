@@ -18,6 +18,12 @@
     background-color: transparent;
     border: 0.5px solid black;
     border-radius: 5px 0 0px 5px;
+    transition: all 0.3s ease ;
+    cursor: pointer;
+}
+.main-content-nav__button:hover
+{
+    background-color: gray;
 }
 .main-content-nav
 {
@@ -92,6 +98,16 @@
 {
     color: white;
 }
+.main-search__text
+{
+    color: white;
+    text-align: center;
+}
+.main-searh__flex
+{
+    display: flex;
+    gap: 0;
+}
 .main-search__input
 {
     border: none;
@@ -120,6 +136,16 @@
     width: 263px;
     height: 150px;
 }
+.main-search__title::after
+{
+    content: "200 ₽";
+    padding: 5px;
+    background-image:url('/Users/o2/projectYarik/O2maket2/img/Vector 163.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 .main-news
 {
     display: flex;
@@ -137,7 +163,6 @@
 .main-info-text__yellow
 {
     display: flex;
-
     border-radius: 5px;
     background-color: #fff0cb;
     color: #FBC02D;
@@ -150,7 +175,6 @@
 }
 .main-info-text__like
 {
-
     display: flex;
     gap: 5px;
     border-radius: 5px;
@@ -242,14 +266,18 @@
     font-size: 12px;
     opacity: 45%;
 }
-.main-news__block
-{
-    padding: 20px;
-}
+.main-news__block{ padding: 20px; }
 .main-news__button
 {
     padding: 10px 65px;
     background-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.main-news__button:hover
+{
+     background-color: black;
+     color: white;;
 }
 .main-news__info
 {
@@ -268,11 +296,59 @@
     }
     .main-info__card
     {
+        margin-bottom: 50px;
         height: 430px;
-        width: 150px;
+        width: 180px;
     }
-    .main-info__card--mobile
+    .main-info__card--mobile{ display: none; }
+    .main-info-text__rating
     {
-        display: none;
+    flex-direction: column;
+    text-align: start;
+    }
+    .main-info-text__yellow
+    {
+        width: 60px;
+        font-size: 13px;
+    }
+    .main-info-text__like{ font-size: 13px; }
+    .main-kritery
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .main-kritery__block{ width: 100%; }
+    .main-news__block--empty{ display: none; }
+    .main-news__block
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-search
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        margin: 0 auto;
+        height: auto;
+    }
+    .main-searh__flex
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-search__input
+    {
+        width: 100%;
+    }
+    .main-search__button
+    {
+        width: 100%;
+    }
+    .main-kritery__block
+    {
+        margin: 3px auto;
     }
 }
