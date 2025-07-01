@@ -1,19 +1,33 @@
 {
-  "name": "o2maket2",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "vite",
-    "build": "vite build"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --cache --fix"
+    ]
+  },
   "dependencies": {
     "lodash": "^4.17.21",
+    "nuxt": "^3.17.5",
     "vite": "^6.3.5",
-    "vue": "^3.5.17"
+    "vue": "^3.5.17",
+    "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
     "@vue/cli-service": "^5.0.8"
