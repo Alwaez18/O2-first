@@ -1,64 +1,84 @@
-.hero-section {
-    margin-top: 30px;
-  }
+.hero-section { margin-top: 30px; }
 
-  /* Основная сетка */
-  .hero-section__grid {
+/* Основная сетка (2 колонки: левая - зелёный+блоки, правая - карточка) */
+.hero-section__grid
+{
     display: grid;
-    grid-template-columns: 60% 1fr;
+    grid-template-columns: 60% 1fr; /* 60% под левую часть, остальное - карточка */
     gap: 15px;
-  }
+}
 
-  /* Зелёный блок */
-  .hero-section__action {
+/* Зелёный блок (2=3) */
+.hero-section__action
+{
     height: 350px;
-    background-image: url("public/img/Group 1049.png");
+    background-image: url("/Users/o2/projectYarik/O2maket2/img/Group 1049.png");
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    grid-row: 1; /* Первая строка сетки */
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    grid-row: 1;
-  }
-
-  .hero-section__button {
+}
+.hero-section__button
+{
     padding: 10px;
     background-color: white;
     border: none;
     transition: all 0.3s ease;
     cursor: pointer;
     border-radius: 10px;
-  }
+}
+.hero-section__button:hover
+{
+    border-radius: -5px;
+    background-color: gray;
+}
 
-  .hero-section__button:hover {
-    background-color: rgba(128, 128, 128, 0.5);
-  }
+.hero-section__action-number
+{
+    font-size: 96px;
+    font-weight: bold;
+}
 
-  /* Блоки под зеленым блоком */
-  .hero-section__blocks {
+.hero-section__action-text
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-section__blocks
+{
     display: flex;
     gap: 15px;
-    grid-row: 2;
-  }
+    grid-row: 2; /* Вторая строка сетки */
+}
 
-  .hero-section__block {
+.hero-section__block
+{
     flex: 1;
     height: 140px;
-  }
+}
 
-  .hero-section__block--purple {
+.hero-section__block--purple
+{
     margin-top: 40px;
     display: flex;
     font-size: 20px;
     align-items: center;
+    text-align: start;
     color: white;
     background-color: purple;
     padding: 10px;
     border-radius: 10px;
-  }
-
-  .hero-section__block--pink {
+}
+.hero-section__block--pink
+{
     margin-top: 40px;
     background-color: pink;
     display: flex;
@@ -66,67 +86,73 @@
     align-items: center;
     border-radius: 10px;
     padding: 25px;
-  }
+}
 
-  /* Карточка товара */
-  .hero-section__product-card {
+/* Карточка товара (занимает обе строки) */
+.hero-section__product-card
+{
     padding: 10px;
-    grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-column: 2; /* Вторая колонка */
+    grid-row: 1 / span 2; /* Растягиваем на 2 строки */
     background-color: white;
     border-radius: 8px;
-  }
-
-  .hero-section__product-card__time {
+}
+.hero-section__product-card__time
+{
     background: rgba(255, 122, 0, 0.15);
-    color: #FF7A00;
+    color:  #FF7A00;
     padding: 10px;
     border-radius: 5px;
-  }
+}
 
-  .hero-section__product-card__up {
+.hero-section__product-card__up
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
-  .hero-section__product-card__main {
+.hero-section__product-card__main
+{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
-  }
 
-  .hero-section__product-card__low {
-    padding: 0 30px 50px;
+    margin-top: 25px;
+}
+.hero-section__product-card__low
+{
+    padding: 0px 30px 50px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-  }
+}
 
-  .hero-section__product-card__desription {
+.hero-section__product-card__desription
+{
     font-size: 12px;
     color: gray;
-  }
-
-  .hero-section__product-card__desription--black {
+}
+.hero-section__product-card__desription--black
+{
     color: black;
     font-size: 14px;
-  }
-
-  .hero-section__product-card__desription--sale {
+}
+.hero-section__product-card__desription--sale
+{
     color: black;
     font-weight: bold;
     font-size: 18px;
-  }
-
-  .hero-section__product-card__buttons {
-    display: flex;
-    gap: 10px;
-  }
-
-  .hero-section__product-card__button {
+}
+.hero-section__product-card__button
+{
+    background-color: transparent;
+    border: 1px;
+    box-shadow: black;
+}
+.hero-section__product-card__button
+{
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     display: flex;
@@ -134,40 +160,75 @@
     padding: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
-    background-color: transparent;
-    border: 1px solid transparent;
-  }
-
-  .hero-section__product-card__button:hover {
+}
+.hero-section__product-card__button:hover
+{
     box-shadow: 5px 5px 10px rgba(248, 112, 0, 0.9);
-    transform: scale(1.05);
-  }
+    scale: 1.1;
+}
+.hero-section__product-card__buttons
+{
+    display: flex;
+    gap: 10px;
+}
+.hero-section__text--registr{ display: block; }
+.hero-section__text::before
+{
+    content: "Бесплатно";
+    padding: 5px;
+    background-image:url('/Users/o2/projectYarik/O2maket2/img/Vector 161.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-  /* Адаптация для мобильных */
-  @media (max-width: 375px) {
-    .hero-section__grid {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
+}
+.hero-section__text--registr::after
+{
+    content: "15 %";
+    padding: 5px;
+    background-image:url('/Users/o2/projectYarik/O2maket2/img/Vector 162.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media(max-width:375px)
+{
+    .hero-section__grid
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        margin: 0;
     }
+    .hero-section__blocks
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+    }
+    .hero-section__block
+    {
+        margin: 10px auto;
+    }
+    .hero-section__product-card{order: 2;}
+    .hero-section__action
+    {
+        height: 155px;
+        order: 0;
+    }
+    .hero-section__action-number{ font-size: 48px; }
+    .hero-section__action-text{font-size: 16px;}
+    .hero-section__blocks
+    {
+        order: 3;
+        height: 355px;
+    }
+    .hero-section__text--registr
+    {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
-    .hero-section__action {
-      height: 155px;
-      order: 0;
     }
-
-    .hero-section__blocks {
-      flex-direction: column;
-      gap: 0;
-      order: 3;
-      height: auto;
-    }
-
-    .hero-section__block {
-      margin: 10px auto;
-    }
-
-    .hero-section__product-card {
-      order: 2;
-    }
-  }
+}

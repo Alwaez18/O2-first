@@ -13,6 +13,20 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
       'BookCard': typeof import("../components/BookCard.vue")['default']
+    'Footer': typeof import("../components/footer/footer.vue")['default']
+    'FooterBotomn': typeof import("../components/footer/footerBotomn.vue")['default']
+    'FooterColumn': typeof import("../components/footer/footerColumn.vue")['default']
+    'FooterTop': typeof import("../components/footer/footerTop.vue")['default']
+    'HeaderBottom': typeof import("../components/header/header-bottom.vue")['default']
+    'HeaderMain': typeof import("../components/header/header-main.vue")['default']
+    'HeaderTop': typeof import("../components/header/header-top.vue")['default']
+    'HeroSectionAction': typeof import("../components/hero-section/hero-section-action.vue")['default']
+    'HeroSectionBlocks': typeof import("../components/hero-section/hero-section-blocks.vue")['default']
+    'HeroSectionCard': typeof import("../components/hero-section/hero-section-card.vue")['default']
+    'MainHeader': typeof import("../components/main/main-header.vue")['default']
+    'MainKritery': typeof import("../components/main/main-kritery.vue")['default']
+    'MainNew': typeof import("../components/main/main-new.vue")['default']
+    'MainSearch': typeof import("../components/main/main-search.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -38,6 +52,20 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyBookCard': LazyComponent<typeof import("../components/BookCard.vue")['default']>
+    'LazyFooter': LazyComponent<typeof import("../components/footer/footer.vue")['default']>
+    'LazyFooterBotomn': LazyComponent<typeof import("../components/footer/footerBotomn.vue")['default']>
+    'LazyFooterColumn': LazyComponent<typeof import("../components/footer/footerColumn.vue")['default']>
+    'LazyFooterTop': LazyComponent<typeof import("../components/footer/footerTop.vue")['default']>
+    'LazyHeaderBottom': LazyComponent<typeof import("../components/header/header-bottom.vue")['default']>
+    'LazyHeaderMain': LazyComponent<typeof import("../components/header/header-main.vue")['default']>
+    'LazyHeaderTop': LazyComponent<typeof import("../components/header/header-top.vue")['default']>
+    'LazyHeroSectionAction': LazyComponent<typeof import("../components/hero-section/hero-section-action.vue")['default']>
+    'LazyHeroSectionBlocks': LazyComponent<typeof import("../components/hero-section/hero-section-blocks.vue")['default']>
+    'LazyHeroSectionCard': LazyComponent<typeof import("../components/hero-section/hero-section-card.vue")['default']>
+    'LazyMainHeader': LazyComponent<typeof import("../components/main/main-header.vue")['default']>
+    'LazyMainKritery': LazyComponent<typeof import("../components/main/main-kritery.vue")['default']>
+    'LazyMainNew': LazyComponent<typeof import("../components/main/main-new.vue")['default']>
+    'LazyMainSearch': LazyComponent<typeof import("../components/main/main-search.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
     'LazyNuxtErrorBoundary': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -69,6 +97,20 @@ declare module 'vue' {
 }
 
 export const BookCard: typeof import("../components/BookCard.vue")['default']
+export const Footer: typeof import("../components/footer/footer.vue")['default']
+export const FooterBotomn: typeof import("../components/footer/footerBotomn.vue")['default']
+export const FooterColumn: typeof import("../components/footer/footerColumn.vue")['default']
+export const FooterTop: typeof import("../components/footer/footerTop.vue")['default']
+export const HeaderBottom: typeof import("../components/header/header-bottom.vue")['default']
+export const HeaderMain: typeof import("../components/header/header-main.vue")['default']
+export const HeaderTop: typeof import("../components/header/header-top.vue")['default']
+export const HeroSectionAction: typeof import("../components/hero-section/hero-section-action.vue")['default']
+export const HeroSectionBlocks: typeof import("../components/hero-section/hero-section-blocks.vue")['default']
+export const HeroSectionCard: typeof import("../components/hero-section/hero-section-card.vue")['default']
+export const MainHeader: typeof import("../components/main/main-header.vue")['default']
+export const MainKritery: typeof import("../components/main/main-kritery.vue")['default']
+export const MainNew: typeof import("../components/main/main-new.vue")['default']
+export const MainSearch: typeof import("../components/main/main-search.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -94,6 +136,20 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyBookCard: LazyComponent<typeof import("../components/BookCard.vue")['default']>
+export const LazyFooter: LazyComponent<typeof import("../components/footer/footer.vue")['default']>
+export const LazyFooterBotomn: LazyComponent<typeof import("../components/footer/footerBotomn.vue")['default']>
+export const LazyFooterColumn: LazyComponent<typeof import("../components/footer/footerColumn.vue")['default']>
+export const LazyFooterTop: LazyComponent<typeof import("../components/footer/footerTop.vue")['default']>
+export const LazyHeaderBottom: LazyComponent<typeof import("../components/header/header-bottom.vue")['default']>
+export const LazyHeaderMain: LazyComponent<typeof import("../components/header/header-main.vue")['default']>
+export const LazyHeaderTop: LazyComponent<typeof import("../components/header/header-top.vue")['default']>
+export const LazyHeroSectionAction: LazyComponent<typeof import("../components/hero-section/hero-section-action.vue")['default']>
+export const LazyHeroSectionBlocks: LazyComponent<typeof import("../components/hero-section/hero-section-blocks.vue")['default']>
+export const LazyHeroSectionCard: LazyComponent<typeof import("../components/hero-section/hero-section-card.vue")['default']>
+export const LazyMainHeader: LazyComponent<typeof import("../components/main/main-header.vue")['default']>
+export const LazyMainKritery: LazyComponent<typeof import("../components/main/main-kritery.vue")['default']>
+export const LazyMainNew: LazyComponent<typeof import("../components/main/main-new.vue")['default']>
+export const LazyMainSearch: LazyComponent<typeof import("../components/main/main-search.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

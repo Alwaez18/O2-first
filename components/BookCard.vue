@@ -1,97 +1,95 @@
 <template>
-    <article class="main-info__card">
-      <img
-        loading="lazy"
-        :src="getImageUrl('/img/book1.png')"
-        :alt="title"
-        class="main-info__book"
-      >
+  <article class="main-info__card">
+    <img
+      loading="lazy"
+      :src="image"
+      :alt="title"
+      class="main-info__book"
+    >
 
-      <div class="main-info__up" v-if="isBestseller">Бесцеллер</div>
-      <div class="main-info__up main-info__up--red" v-if="promoBadge">{{ promoBadge }}</div>
+    <div class="main-info__up" v-if="isBestseller">Бесцеллер</div>
+    <div class="main-info__up main-info__up--red" v-if="promoBadge">{{ promoBadge }}</div>
 
-      <div class="main-info-text">
-        <span class="main-info-text__span">{{ category }}</span>
-        <p>{{ title }}</p>
-        <span class="main-info-text__span">{{ author }}</span>
-        <span class="main-info-text__price">{{ formattedPrice }} ₽</span>
+    <div class="main-info-text">
+      <span class="main-info-text__span">{{ category }}</span>
+      <p>{{ title }}</p>
+      <span class="main-info-text__span">{{ author }}</span>
+      <span class="main-info-text__price">{{ formattedPrice }} ₽</span>
 
-        <div class="main-info-text__rating" v-if="rating || recommendation">
-          <div class="main-info-text__yellow" v-if="rating">
-            <img :src="getImageUrl('img/Star.svg')" alt="Рейтинг" class="main-info-text__img">
-            {{ rating }}
-          </div>
-          <div class="main-info-text__like" v-if="recommendation">
-            <img :src="getImageUrl('img/like.svg')" alt="Рекомендации" class="main-info-text__img">
-            {{ recommendation }}% рекомендуют
-          </div>
+      <div class="main-info-text__rating" v-if="rating || recommendation">
+        <div class="main-info-text__yellow" v-if="rating">
+          <img src="/img/Star.svg" alt="Рейтинг" class="main-info-text__img"> <!-- Изменено здесь -->
+          {{ rating }}
         </div>
-
-        <div class="hero-section__product-card__buttons">
-          <button class="hero-section__product-card__button">
-            Корзина <img loading="lazy" :src="getImageUrl('img/basket.svg')" alt="Корзина">
-          </button>
-          <button class="hero-section__product-card__button hero-section__product-card__button--">
-            <img loading="lazy" :src="getImageUrl('img/favorite.svg')" alt="Избранное">
-          </button>
+        <div class="main-info-text__like" v-if="recommendation">
+          <img src="/img/like.svg" alt="Рекомендации" class="main-info-text__img"> <!-- Изменено здесь -->
+          {{ recommendation }}% рекомендуют
         </div>
       </div>
-    </article>
-  </template>
 
-  <script setup>
-  import { computed } from 'vue';
+      <div class="hero-section__product-card__buttons">
+        <button class="hero-section__product-card__button">
+          Корзина <img loading="lazy" src="/img/basket.svg" alt="Корзина"> <!-- Изменено здесь -->
+        </button>
+        <button class="hero-section__product-card__button hero-section__product-card__button--">
+          <img loading="lazy" src="/img/favorite.svg" alt="Избранное"> <!-- Изменено здесь -->
+        </button>
+      </div>
+    </div>
+  </article>
+</template>
 
-  const props = defineProps({
-    title: {
-      type: String,
-      required: true,
-      default: "Инвестирование: способы, риски, субъекты : монография"
-    },
-    author: {
-      type: String,
-      default: "Майфат А.В."
-    },
-    category: {
-      type: String,
-      default: "Корпоративное право"
-    },
-    price: {
-      type: [Number, String],
-      default: 4450
-    },
-    isBestseller: {
-      type: Boolean,
-      default: true
-    },
-    promoBadge: {
-      type: String,
-      default: "1+1=3"
-    },
-    rating: {
-      type: [Number, String],
-      default: 4.9
-    },
-    recommendation: {
-      type: [Number, String],
-      default: 89
-    }
-  });
+<script setup>
+import { computed } from 'vue';
 
-  // Форматирование цены с пробелом
-  const formattedPrice = computed(() => {
-    return typeof props.price === 'number'
-      ? props.price.toLocaleString('ru-RU')
-      : String(props.price);
-  });
+const props = defineProps({
+  image: { // Добавлено новое свойство
+    type: String,
+    default: "/img/book1.png"
+  },
+  title: {
+    type: String,
+    required: true,
+    default: "Инвестирование: способы, риски, субъекты : монография"
+  },
+  author: {
+    type: String,
+    default: "Майфат А.В."
+  },
+  category: {
+    type: String,
+    default: "Корпоративное право"
+  },
+  price: {
+    type: [Number, String],
+    default: 4450
+  },
+  isBestseller: {
+    type: Boolean,
+    default: true
+  },
+  promoBadge: {
+    type: String,
+    default: "1+1=3"
+  },
+  rating: {
+    type: [Number, String],
+    default: 4.9
+  },
+  recommendation: {
+    type: [Number, String],
+    default: 89
+  }
+});
 
-  // Корректное получение путей к изображениям
-  const getImageUrl = (name) => {
-    return new URL(`/public/img/${name}`, import.meta.url).href;
-  };
-  </script>
+const formattedPrice = computed(() => {
+  return typeof props.price === 'number'
+    ? props.price.toLocaleString('ru-RU')
+    : String(props.price);
+});
+</script>
 
-  <style lang="css">
+  <style lang="scss">
    /* Основные стили карточки */
 .main-info__card {
     box-sizing: border-box;
