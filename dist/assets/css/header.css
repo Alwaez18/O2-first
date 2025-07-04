@@ -1,0 +1,143 @@
+header
+{
+    width: 100%;
+    background-color: white;
+}
+.header-up
+{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-up__right,
+.header-up__left
+{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.header-up__right-link,
+.header-up__left-link
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 14px;
+    transition: 0.3s all ease;
+}
+.header-up__right-link:hover,
+.header-up__left-link:hover
+{
+    scale: 1.1;
+    color: gray;
+}
+/*-------HEADER_UP-FINISH-------*/
+
+/*-------HEADER_MAIN-START-------*/
+
+.header-main__search,
+.header-main__search-wrapper{ display: flex; }
+.header-main__search{ gap: 45px; }
+.header-main__search-input {
+    padding: 15px 40px 15px 40px;
+    border: 1px solid black; /* Важно: border-style и border-width обязательны! */
+    outline: none;
+    transition: border-color 0.3s;
+    min-width: 400px;
+    width: 100%;
+}
+.header-main__search-input::placeholder { content: "Автор, название, ISBN"; }
+.header-main__search-input:focus {
+    border-color: #FF7A00; /* Теперь сработает */
+    box-shadow: 0 0 5px rgba(255, 122, 0, 0.3);
+}
+.header-main__content
+{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-main__search-button
+{
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    border: none;
+    align-items: center;
+    background-color: #FF7A00;
+    color: white;
+}
+.header-main__nav
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-main__nav-item
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-bottom__nav
+{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header-bottom__nav-item
+{
+    display: flex;
+    gap: 5px;
+}
+.header-bottom__nav-link{ transition: 0.3s all ease; }
+.header-bottom__nav-link:hover{ color: #FF283D; }
+
+.header-bottom__nav-link--orange
+{
+    color: #FF283D;
+    transition: 0.3s all ease;
+}
+.header-bottom__nav-link--orange:hover{color: black;}
+.header-main__mobile{display: none;}
+@media(max-width:375px)
+{
+    .header-up{ display: none; }
+    .header-main__nav{ display: none; }
+    .header-main__search-input::placeholder{ content: "Что будем искать?";}
+    .header-main__search-input
+    {
+        min-width: 125px;
+        width: 100%;
+        padding: 10px;
+    }
+    .header-main__search-button{ display: none; }
+    .header-main__mobile
+    {
+        display: inline;
+        scale: 1.1;
+    }
+    .container
+    {
+        padding: 0 2%;
+    }
+    .header-main__search
+    {
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+    }
+    .header-main__search-wrapper
+    {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .header-bottom
+    {
+        display: none;
+    }
+}

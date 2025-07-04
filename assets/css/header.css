@@ -120,10 +120,7 @@ header
         display: inline;
         scale: 1.1;
     }
-    .container
-    {
-        padding: 0 20px;
-    }
+    .container{ padding: 0 2%; }
     .header-main__search
     {
         display: flex;
@@ -136,8 +133,5 @@ header
         align-items: center;
         gap: 40px;
     }
-    .header-bottom
-    {
-        display: none;
-    }
+    .header-bottom{ display: none; }
 }

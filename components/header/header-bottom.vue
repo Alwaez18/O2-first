@@ -1,5 +1,5 @@
 <template>
-     <section class="header-bottom">
+    <section class="header-bottom">
             <div class="container">
                 <div class="header-bottom__content">
                     <nav class="header-bottom__nav">
@@ -28,5 +28,5 @@
                     </nav>
                 </div>
             </div>
-          </section>
+    </section>
 </template>
